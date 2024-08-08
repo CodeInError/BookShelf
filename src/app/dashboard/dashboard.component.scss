@@ -1,0 +1,21 @@
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .message {
+    text-align: center;
+  }
+  
+  .message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .message button {
+    font-size: 1rem;
+  }
+  

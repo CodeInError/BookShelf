@@ -1,0 +1,36 @@
+<div class="search-bar">
+  <input pInputText type="text" [formControl]="searchControl" placeholder="Search by title or author">
+</div>
+
+<p-table [value]="filteredBooks" [paginator]="true" [rows]="5" [responsive]="true" paginatorDropdownAppendTo="body">
+  <ng-template pTemplate="paginatorright">
+    <!-- <div class="per-page-text">Per page :</div> -->
+</ng-template>
+<ng-template pTemplate="paginatorleft">
+    <div class="per-page-text px-10">Total : {{totalBooks}}</div>
+</ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="thumbnail">Thumbnail</th>
+      <th pSortableColumn="title">Title <p-sortIcon field="title"></p-sortIcon></th>
+      <th pSortableColumn="authors">Author <p-sortIcon field="authors"></p-sortIcon></th>
+      <th>Actions</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-book>
+    <tr>
+      <td>
+        <img [src]="book.thumbnail" alt="Book Thumbnail" style="width: 50px; height: auto;">
+      </td>
+      <td>{{ book.title }}</td>
+      <td>{{ book.authors?.join(', ') }}</td>
+      <td>
+        <a pButton pTooltip="View More" tooltipPosition="left" icon="pi pi-eye" (click)="viewMore(book)"
+          class="p-button-secondary p-button-icon-only cursorPointer">
+          <i class="fas fa-eye"></i>
+        </a>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+

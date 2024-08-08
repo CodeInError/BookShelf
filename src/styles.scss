@@ -1,0 +1,88 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+  }
+  
+  .logo {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a i {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  
+  .icon-text {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .cursorPointer{
+    cursor: pointer;
+  }
+
+  .delete-icon {
+    color: red;
+  }
+  

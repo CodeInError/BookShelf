@@ -1,0 +1,128 @@
+.title-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 2em;
+    margin-right: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    color: #666;
+  }
+  
+  .double-line {
+    border-top: 2px double #000;
+    margin: 10px 0;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .info-row p {
+    margin: 0;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  .description p {
+    margin: 0;
+  }
+
+  .title-container {
+    position: relative; /* To position the heart icon absolutely within this container */
+    display: flex;
+    align-items: center;
+  
+    .heart-icon {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 24px; /* Adjust the size of the heart icon */
+      color: red;
+      cursor: pointer;
+  
+      &:hover {
+        color: darkred;
+      }
+    }
+  }
+  
+  .double-line {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  .description {
+    p {
+      margin: 0;
+    }
+  }
+  
+  .title-container {
+    position: relative; /* This is required for absolute positioning of the heart icon */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Adjust the spacing between elements as needed */
+  }
+  
+  .title {
+    /* Styling for title */
+    margin: 0;
+  }
+  
+  .subtitle {
+    /* Styling for subtitle */
+    margin: 0;
+    overflow-wrap: break-word; /* Ensure long text wraps and does not overflow */
+  }
+  
+  .heart-icon {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 0;
+    right: 0; /* Adjust to position the icon on the right side */
+    background-color: #fff; /* Optional: Background to cover text underneath */
+    padding: 5px; /* Optional: Add padding to the icon */
+    cursor: pointer;
+  }
+  
+  .heart-icon i {
+    color: red; /* Icon color */
+    font-size: 1.5rem; /* Adjust size as needed */
+  }
+  

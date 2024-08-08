@@ -1,0 +1,21 @@
+
+<div class="dashboard">
+  <div class="sidebar">
+    <div class="logo">
+      <h2>Book Manager</h2>
+    </div>
+    <ul class="menu m-4">
+      <li><a routerLink="/dashboard" routerLinkActive="active">
+        <i class="fa-solid fa-house"></i>Dashboard</a></li>
+      <li><a routerLink="/books" routerLinkActive="active">
+        <i class="fas fa-book"></i>Book List</a></li>
+      <li><a routerLink="/favorites" routerLinkActive="active">
+        <i class="fas fa-heart"></i> Favorite Book List</a></li>
+    </ul>
+  </div>
+  
+  <div class="main-content">
+    <router-outlet></router-outlet> 
+  </div>
+  
+  

@@ -1,0 +1,39 @@
+<p-toast />
+<div *ngIf="book">
+  <!-- Title and Subtitle -->
+  <div class="title-container">
+    <h1 class="title">{{ book.title }}</h1>
+    <h2 class="subtitle">{{ book.subtitle }}</h2>
+    <a class="heart-icon"  tooltipPosition="left" pTooltip="Add To Favourite List" (click)="addToFavorites(bookAllValue)">
+      <i class="far fa-heart"></i>
+    </a>
+  </div>
+
+  <!-- Double Line -->
+  <div class="double-line"></div>
+
+  <!-- Author and Categories -->
+  <div class="info-row">
+    <p><strong>Author(s):</strong> {{ book.authors?.join(', ') }}</p>
+    <p><strong>Categories:</strong> {{ book.categories?.join(', ') }}</p>
+  </div>
+
+  <!-- Publisher and Published Date -->
+  <div class="info-row">
+    <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+    <p><strong>Published Date:</strong> {{ book.publishedDate }}</p>
+  </div>
+
+  <!-- Image -->
+  <div class="image-container">
+    <img [src]="book.imageLinks?.thumbnail" alt="Book Thumbnail">
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <p><strong>Description:</strong></p>
+    <p>{{ book.description }}</p>
+  </div>
+</div>
+
+  
